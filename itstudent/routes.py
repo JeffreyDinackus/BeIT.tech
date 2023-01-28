@@ -14,3 +14,13 @@ def index():
 def hello():
     return 'Hello, World'
 
+
+@app.route('/register')
+def hello():
+    return render_template('register.html')
+
+
+@app.route('/hello')
+def hello():
+    return render_template('forum.html')
+
