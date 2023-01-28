@@ -16,11 +16,11 @@ def hello():
 
 
 @app.route('/register')
-def hello():
+def register():
     return render_template('register.html')
 
 
 @app.route('/forum')
-def hello():
+def forum():
     return render_template('forum.html')
 
