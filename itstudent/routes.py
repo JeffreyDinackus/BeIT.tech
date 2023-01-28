@@ -20,7 +20,7 @@ def hello():
     return render_template('register.html')
 
 
-@app.route('/hello')
+@app.route('/forum')
 def hello():
     return render_template('forum.html')
 
