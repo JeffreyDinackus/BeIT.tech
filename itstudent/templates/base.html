@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}}</title>
+    <title>{% block title %}
+    {% endblock %}
+    </title>
 </head>
 <body>
-{% block page %}
+{{% block page %}}
 
-{% endblock %}
+{{% endblock %}}
 </body>
 </html>
