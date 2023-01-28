@@ -1,26 +1,14 @@
-from itstudent import app
-from flask import render_template
+from flask import Blueprint
+
+routes = Blueprint("routes", __name__)
+
+#Register these blueprints in our init pi
+
+@routes.route('/')
+def home():
+    return "<h1> This is the home page</h1>"
 
 
-@app.route('/')
-@app.route('/index')
-@app.route('/homepage')
-@app.route('/home')
-def index():
-    return render_template('index.html')
 
 
-@app.route('/hello')
-def hello():
-    return 'Hello, World'
-
-
-@app.route('/register')
-def register():
-    return render_template('register.html')
-
-
-@app.route('/forum')
-def forum():
-    return render_template('forum.html')
 
