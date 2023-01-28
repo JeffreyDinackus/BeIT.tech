@@ -1,5 +1,8 @@
 from flask import Flask, render_template
-app = Flask(__name__)
+from logging import FileHandler,WARNING
+app = Flask(__name__, template_folder = 'template')
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
 
 
 @app.route("/")
