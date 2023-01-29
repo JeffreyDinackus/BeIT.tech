@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 database = SQLAlchemy()
 DB_NAME = "database.db"
 
-
+from itstudent import complete
 
 if __name__ == '__main__':
     app = Flask(__name__)
@@ -19,3 +19,4 @@ if __name__ == '__main__':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{DB_NAME}'
     database.init_app(app)
     app.run(debug=True)
+    

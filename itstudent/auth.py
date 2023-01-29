@@ -1,6 +1,7 @@
 from flask import Blueprint
 from flask import render_template
 from flask import request
+import itstudent
 
 auth = Blueprint("auth", __name__)
 
@@ -9,7 +10,9 @@ def login():
     formData = request.form
     print(formData)
     return render_template("login.html")
-
+@app.route('/complete2')
+def complete2():
+    return itstudent.complete()
 @auth.route('/logout')
 def logout():
     return render_template("logout.html")
