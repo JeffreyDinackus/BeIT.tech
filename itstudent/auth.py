@@ -1,15 +1,35 @@
 from flask import Blueprint
 from flask import render_template
+from flask import request
+
 auth = Blueprint("auth", __name__)
 
-@auth.route('/login')
+@auth.route('/login', methods = ['POST', 'GET'])
 def login():
-    return "<p>Login</p>"
+    formData = request.form
+    print(formData)
+    return render_template("login.html")
 
 @auth.route('/logout')
 def logout():
-    return "<p>logout</p>"
-
-@auth.route('/signUp')
+    return render_template("logout.html")
+#default route http method is GET, so we have to add POST as well to utilize it without error
+@auth.route('/signUp', methods = ["POST", "GET"])
 def signUp():
-    return "<h1> This is the signUp page</h1>"
+    #if a POST request was made, grab the values from the form and store them in variables email, userName, and password
+    if request.method == "POST":
+        email = request.form.get('email')
+        userName = request.form.get('userName')
+        password = request.form.get('password')
+        if len(email) > 3:
+            pass
+        elif len(password) > 0:
+            pass
+        elif len(userName) > 0:
+            pass
+    #if email 3 letters, or password is more than 0, and userName is more than 0, then value was inputted so add this user to the database
+
+    #conditions 
+    formData = request.form
+    print(formData)
+    return render_template("signUp.html")

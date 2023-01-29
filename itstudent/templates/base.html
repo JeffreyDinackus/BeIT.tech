@@ -8,36 +8,39 @@
   </head>
   <style>
     .text{
-      color: white;
+      color: rgb(58, 58, 58);
     }
 
   </style>
-  <body style="background-color: rgb(186, 186, 186);"> 
+  <body style="background-color: rgb(255, 255, 255);"> 
     
     <nav class="navbar navbar-expand-lg navbar-success bg-success">  
     <div class="container-fluid">
-      <a href="index.html" style="text-decoration:none; color:rgb(115, 115, 115);"><h1>BeIT</h1></a>
+      <a href="/" style="text-decoration:none; color:rgb(0, 187, 255);"><h1>BeIT</h1></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link ms-3 btn btn-dark text-light" href="/home">home</a>
+          <a class="nav-link ms-3 btn btn-dark text-light" href="/">home</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link ms-3 btn btn-dark text-light" href="/logout">logout</a>
+          </li>
         <li class="nav-item">
           <a class="nav-link ms-3 btn btn-dark text-light" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ms-3 btn btn-dark text-light" href="/logout">logout</a>
+            <a class="nav-link ms-3 btn btn-dark text-light" href="/signUp">Sign Up</a>
         </li>
      </div>
     </div>
 </nav>
-
+{% block pageContent%}
 <h1 class="text">ITStudent.com is the place to begin your career in Information Technology!</h1>
 <p class="text">
 is the destination for finding voluneering
-
+{%endblock%}
 </p>
 
 
