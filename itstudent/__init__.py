@@ -5,7 +5,6 @@ from flask_sqlalchemy import SQLAlchemy
 database = SQLAlchemy()
 DB_NAME = "database.db"
 
-from itstudent import complete
 
 if __name__ == '__main__':
     app = Flask(__name__)
