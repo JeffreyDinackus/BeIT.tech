@@ -4,43 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-        {% block title %}
-            title
-        {% endblock %}
-        </title>
+    <title>{% block title%}ITstudent{%endblock%}</title>
   </head>
   <style>
     .text{
-      color: white;
+      color: rgb(58, 58, 58);
     }
 
   </style>
-  <body style="background-color: black;"> 
+  <body style="background-color: rgb(255, 255, 255);"> 
     
     <nav class="navbar navbar-expand-lg navbar-success bg-success">  
     <div class="container-fluid">
-      <a href="index.html" style="text-decoration:none; color:black;"><h1>BeIT</h1></a>
+      <a href="/" style="text-decoration:none; color:rgb(0, 187, 255);"><h1>BeIT</h1></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link ms-3 btn btn-dark text-light" href="forum.html">Forum</a>
+          <a class="nav-link ms-3 btn btn-dark text-light" href="/">home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ms-3 btn btn-dark text-light" href="#">Login</a>
+            <a class="nav-link ms-3 btn btn-dark text-light" href="/logout">logout</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link ms-3 btn btn-dark text-light" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ms-3 btn btn-dark text-light" href="#">Register</a>
+            <a class="nav-link ms-3 btn btn-dark text-light" href="/signUp">Sign Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ms-3 btn btn-dark text-light" href="/jobboard">Jobs</a>
         </li>
      </div>
     </div>
 </nav>
-
-{% block page %}
-    paragraph
-{% endblock %}
+{% block pageContent%}
+<div class="container mt-5">
+<h1 class="text">ITStudent.com is the place to begin your career in Information Technology!</h1>
+<p class="text">
+<h1>Sign up today to begin taking jobs! BeIT.</h1>
+</div>
+{%endblock%}
+</p>
 
 
   </body>
