@@ -1,5 +1,5 @@
 # HoyaHacks-2023
-This is my and my teams HoyaHacks 2023 project
+This is my and @MuneebShuaib HoyaHacks 2023 project
 
 This project won HoyaHacks 2023 for "Most Creative use of Verbwire"
 
