@@ -8,4 +8,4 @@ The concept for this project is to give a place for Information Technology stude
 
 On completion of a job, a NFT is minted as record of the job using Verbwire
 
-Technologies used: Flask, HTML5, CSS3, Python, Bootstrap 5, 
+Technologies used: Flask, HTML5, CSS3, Python, Bootstrap 5, Verbwire.
